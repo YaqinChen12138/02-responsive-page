@@ -26,6 +26,8 @@ h1 {
 
 main {
   padding: 16px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 section {
@@ -120,6 +122,49 @@ a:hover {
 }
 
 .article img {
+  max-width: 100%;
+  height: auto;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  body{background-color: red;}
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  #featured-article h2 {
+    font-size: 28px;
+  }
+
+  main {
+    padding: 12px;
+  }
+
+  section {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  #featured-article {
+    padding: 24px;
+  }
+
+  header {
+    padding: 12px;
+  }
+
+  body {
+    font-size: 16px;
+  }
 }
